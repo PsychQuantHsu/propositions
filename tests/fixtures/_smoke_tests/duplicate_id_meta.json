@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.3",
+  "source": {
+    "file": "manuscript/propositions/_smoke_tests/duplicate_id.tex",
+    "extracted_at": "2026-05-14T00:00:00+08:00",
+    "extractor": "manual (Spectra migrate-prop-id-to-stable-uuid Task 3.2 smoke fixture)",
+    "scenario": "duplicate_id: two props sharing the same UUID v7 — validator MUST emit R8 finding"
+  },
+  "coverage": {
+    "purpose": "Smoke-test that R8 unique-ids detection fires on duplicate UUID under v1.2 schema and surfaces both display ordinal and the duplicated UUID in the finding text."
+  }
+}

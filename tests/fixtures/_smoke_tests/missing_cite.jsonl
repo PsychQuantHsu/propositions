@@ -1,0 +1,1 @@
+{"id": "01910b9c-d4f0-7042-8000-0000000000aa", "text": "Source prop with a dangling cite.", "location": "smoke_tests/missing_cite.tex:L1", "containing_block": "sec:smoke", "claim_type": "claim", "asserts": ["a"], "mathematical_objects": [], "cites": ["01910b9c-d4f0-7999-8000-00000000bbbb"], "evidence_class": "derived"}

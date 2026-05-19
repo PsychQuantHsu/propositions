@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.3",
+  "source": {
+    "file": "manuscript/propositions/_smoke_tests/missing_cite.tex",
+    "extracted_at": "2026-05-14T00:00:00+08:00",
+    "extractor": "manual (Spectra migrate-prop-id-to-stable-uuid Task 3.3 smoke fixture)",
+    "scenario": "missing_cite: one prop whose cites entry points at a UUID v7 not present in the file — validator MUST emit R2 unresolved-cite finding"
+  },
+  "coverage": {
+    "purpose": "Smoke-test that R2 cite-resolve fires on a dangling UUID under v1.2 schema and renders both the source prop display ordinal and the unresolved UUID inside the finding text per Task 2.4 diagnostic format."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.3",
+  "source": {
+    "file": "manuscript/propositions/_smoke_tests/rollback_60_real.tex",
+    "commit_sha": "a11db6c^ (manuscript@a11db6c parent = pre-#60-fix state)",
+    "extracted_at": "2026-05-14T07:30:00+08:00",
+    "extractor": "manual (real pre-#60-fix wording verbatim from manuscript@a11db6c^ Theorem 1 L401-419 + Cases (B)(C) L455+L460-465)"
+  },
+  "coverage": {
+    "purpose": "Real pre-#60-fix regression test — proves R4 PATTERN-A catches authentic historical wording (not just hand-crafted synthetic in rollback_60.jsonl). Complements synthetic fixture as regression guard pair per #74.",
+    "sections": [
+      "sec:setup (boundary axiom only)",
+      "sec:thm1 (hypothesis + Cases B, C)"
+    ],
+    "scenario": "rollback_60_real: REAL historical Theorem 1 with f-extension language",
+    "extraction_note": "Content excerpts are VERBATIM from manuscript@a11db6c^ (boundary axiom L213-214, Theorem 1 hypothesis L408-413, Case (B) Logarithmic L455, Case (C) Power L460-465). Document structure is hand-curated: section headers added ('Setup (excerpt — ...)' / 'Theorem 1 (excerpt — pre-#60-fix hypothesis)'), ~400 lines of intervening content skipped, Cases (B)+(C) lifted out of full enumeration. Verbatim content preserves authenticity for PATTERN-A trigger conditions; structural curation enables minimal test fixture (32 lines vs full 1494-line pre-fix manuscript)."
+  }
+}

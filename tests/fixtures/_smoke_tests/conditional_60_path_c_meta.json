@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.3",
+  "source": {
+    "file": "manuscript/propositions/_smoke_tests/conditional_60_path_c.tex",
+    "commit_sha": "35c964a onwards (post-#60 Path C)",
+    "extracted_at": "2026-05-16T00:00:00+08:00",
+    "extractor": "manual (mirror of rollback_60_real with Path C conditional-framework wording)"
+  },
+  "coverage": {
+    "purpose": "Post-#60-Path-C conditional-framework F2 fixture — validates that R4 PATTERN-A becomes framework-aware. Same structure as rollback_60_real (4 props: 1 axiom + 1 hypothesis + 2 case_split with f-extension claim) but axiom prop frames boundary as locally-imposed (post-Path-C), NOT as universal axiom. Used in TestR4PatternAFrameworkAware::test_f2_conditional_boundary_skips_pattern_a (#103).",
+    "sections": [
+      "sec:setup (Iverson's law with conditional boundary clause)",
+      "sec:thm1 (hypothesis + Cases B, C with f-extension)"
+    ],
+    "scenario": "conditional_60_path_c: Post-Path-C state — axiom says 'imposed locally — not part of universal'; same η=f(s) hypothesis + Cases (B)(C) f-extension as rollback_60_real (no manuscript-side difference there).",
+    "expectation_pre_fix": "R4 ERROR (false-positive — current regex sees η(1,s)=s substring and triggers PATTERN-A regardless of conditional framing)",
+    "expectation_post_fix": "R4 PASS (framework-aware: axiom_frames_conditionally=True → has_universal_boundary_eta=False → PATTERN-A short-circuits)"
+  }
+}

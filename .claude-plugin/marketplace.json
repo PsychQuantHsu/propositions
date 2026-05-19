@@ -1,0 +1,15 @@
+{
+  "name": "propositions",
+  "owner": {
+    "name": "Che Cheng"
+  },
+  "description": "Author-claim infrastructure for academic LaTeX manuscripts — propositions plugin self-hosted as a single-plugin marketplace.",
+  "plugins": [
+    {
+      "name": "propositions",
+      "source": "./",
+      "description": "Line-addressable propositions (JSONL) extracted from main.tex + R1-R13 mechanical validator + audit tooling + extraction discipline.",
+      "version": "0.1.0"
+    }
+  ]
+}

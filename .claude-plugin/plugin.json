@@ -1,0 +1,18 @@
+{
+  "name": "propositions",
+  "version": "0.1.0",
+  "description": "Author-claim infrastructure for academic LaTeX manuscripts. Line-addressable propositions (JSONL) extracted from main.tex + R1-R13 mechanical validator + audit tooling + extraction discipline. Originally developed as the 'Locke project' for PsychQuantHsu/psychophysical_representations and packaged as a reusable plugin.",
+  "author": {
+    "name": "Che Cheng"
+  },
+  "license": "MIT",
+  "keywords": [
+    "latex",
+    "manuscript",
+    "propositions",
+    "validation",
+    "academic-writing",
+    "proof-checking",
+    "claim-audit"
+  ]
+}

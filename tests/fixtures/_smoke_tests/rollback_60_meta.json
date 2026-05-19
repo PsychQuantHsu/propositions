@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.3",
+  "source": {
+    "file": "manuscript/propositions/_smoke_tests/rollback_60.tex",
+    "extracted_at": "2026-05-13T22:30:00+08:00",
+    "extractor": "manual (simulated pre-#60-fix state)",
+    "scenario": "rollback_60: pre-fix Theorem 1 with f-extension language"
+  },
+  "coverage": {
+    "purpose": "Demonstrate that R4 PATTERN-A mechanical contradiction catches the #60 boundary violation when validator runs against pre-fix Theorem 1 propositions."
+  }
+}

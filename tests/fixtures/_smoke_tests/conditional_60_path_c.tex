@@ -1,0 +1,39 @@
+% Post-#60-Path-C manuscript snippet (from manuscript repo 35c964a onwards)
+% This file mirrors rollback_60_real.tex but with Path C conditional-framework
+% wording. Used as F2 fixture in TestR4PatternAFrameworkAware: validates that
+% R4 PATTERN-A does NOT false-positive when axiom prop frames boundary as
+% conditional / locally-invoked (post-Path-C state).
+
+\section{Setup (excerpt — conditional boundary, post-Path-C)}
+\label{sec:setup}
+
+A sensitivity family $\{\xi_s\}_{s \in S}$ satisfies \emph{Iverson's law of
+similarity} if there exist continuous functions $\gamma, \eta$ with
+$\xi_s(\lambda x) = \xi_{\eta(\lambda,s)}(x)$ for $\lambda \in J$.
+Following the framework of \citet{DobleHsu2020} and
+\citet{GselmannDobleHsu2025}, boundary conditions (such as
+$\gamma(1, s) = 1$, $\eta(1, s) = s$, or $H(0) = 0$) are imposed locally
+in theorems that invoke them (e.g.\ Theorem~\ref{thm:mult-trans}), not as
+part of the universal similarity definition.
+
+\section{Theorem 1 (excerpt — Path C f-extension hypothesis)}
+\label{sec:thm1}
+
+\begin{theorem}[Gain-control with $\eta(\lambda,s)=f(s)$]
+\label{thm:eta-s}
+Suppose $\xi$ satisfies Iverson's law of similarity with
+$\eta(\lambda, s) = f(s)$ for a continuous function $f\colon S \to S$
+(the $\eta = s$ specialization corresponds to $f = \mathrm{id}_S$, subsumed
+in what follows).
+\end{theorem}
+
+\textbf{Case (B): Logarithmic.}
+$u(y) = a \ln y + d + e\,c$,
+$v(x) = a b \ln x + d$, $\sigma(x) = c$ const.,
+$\gamma(\lambda, s) = \lambda^b\, e^{c(s - f(s))/a}$
+(reduces to $\lambda^b$ at $f = \mathrm{id}$; $f$ may be any continuous map here).
+
+\textbf{Case (C): Power.}
+$u(y) = c\,e\, y^a + d$,
+$\gamma(\lambda, s) = \lambda^b\, \sqrt[a]{(s + c_2/c)/(f(s) + c_2/c)}$
+(reduces to $\lambda^b$ at $f = \mathrm{id}$; $f$ may be any continuous map here).

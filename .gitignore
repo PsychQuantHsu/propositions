@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+*.swp
+
+# Python bytecode cache
+__pycache__/
+*.pyc
+*.pyo
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Claude Code local settings
+.claude/
+
+# Symlink shim auto-created by tests/conftest.py to expose smoke_tests
+# fixtures at the legacy manuscript-style path; not part of source tree.
+manuscript/
+
+
+# Defensive: prevent committing orphan symlinks/dirs auto-created by old conftest versions
+propositions/

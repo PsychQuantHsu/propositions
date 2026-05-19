@@ -1,0 +1,2 @@
+{"id": "01910b9c-d4f0-7001-8000-0123456789ab", "text": "First prop with the duplicated UUID.", "location": "smoke_tests/duplicate_id.tex:L1", "containing_block": "sec:smoke", "claim_type": "claim", "asserts": ["a"], "mathematical_objects": [], "cites": [], "evidence_class": "derived"}
+{"id": "01910b9c-d4f0-7001-8000-0123456789ab", "text": "Second prop sharing the same UUID.", "location": "smoke_tests/duplicate_id.tex:L2", "containing_block": "sec:smoke", "claim_type": "claim", "asserts": ["a"], "mathematical_objects": [], "cites": [], "evidence_class": "derived"}
