@@ -22,3 +22,5 @@ manuscript/
 
 # Defensive: prevent committing orphan symlinks/dirs auto-created by old conftest versions
 propositions/
+.spectra/
+openspec/.vector-search.db*
