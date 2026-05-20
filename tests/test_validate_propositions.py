@@ -2063,10 +2063,12 @@ def test_normalize_preserves_case_labels(tmp_path):
     so R13's start-anchor sees a unique discriminator and anchors correctly.
     """
     # Import the validator's normalize_for_match via importlib (filename has hyphen).
+    # Resolve the script path relative to the test file's plugin root so the
+    # test works regardless of pytest's CWD (e.g. when invoked from a consumer
+    # repo with `pytest propositions-plugin/tests/`, CWD is the consumer's
+    # repo root, not the plugin's).
     import importlib.util
-    spec = importlib.util.spec_from_file_location(
-        "v", "scripts/validate-propositions.py"
-    )
+    spec = importlib.util.spec_from_file_location("v", SCRIPT)
     v = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(v)
 
